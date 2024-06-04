@@ -206,7 +206,6 @@ main {
 
   .score {
     font-size: 5rem;
-    /* margin-top: -5rem; */
     margin-bottom: 8rem;
   }
 
@@ -217,5 +216,29 @@ main {
 
   .current-score {
     font-size: 3rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.3rem 2rem;
+  }
+
+  .btn--new {
+    top: 6rem;
+    width: 17rem;
+  }
+
+  .btn--roll {
+    top: 50rem;
+    width: 17rem;
+  }
+
+  .btn--hold {
+    top: 56rem;
+  }
+
+  .dice {
+    height: 6rem;
   }
 }

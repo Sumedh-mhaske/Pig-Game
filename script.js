@@ -101,3 +101,5 @@ btnHold.addEventListener("click", function () {
     switchPlayer();
   }
 });
+
+btnNew.addEventListener("click", init);

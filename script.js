@@ -72,3 +72,15 @@ btnRoll.addEventListener("click", function () {
     switchPlayer();
   }
 });
+
+// HOLD BTN FUNCTIONING
+
+btnHold.addEventListener("click", function () {
+  if (playing) {
+    // 1. Add current score to active player's score
+
+    scores[activePlayer] += currentScore; // scores[1] = scores[1] + currentScore
+    document.getElementById(`score--${activePlayer}`).textContent =
+      scores[activePlayer];
+  }
+});

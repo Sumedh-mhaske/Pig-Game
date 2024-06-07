@@ -44,3 +44,18 @@ const switchPlayer = function () {
   player0El.classList.toggle("player--active");
   player1El.classList.toggle("player--active");
 };
+
+// Rolling dice functionality
+
+btnRoll.addEventListener("click", function () {
+  if (playing) {
+    // 1. Generating a random dice
+
+    const dice = Math.trunc(Math.random() * 6) + 1;
+
+    // 2. Display the dice
+
+    diceEl.classList.remove("hidden");
+    diceEl.src = `dice-${dice}.png`;
+  }
+});
